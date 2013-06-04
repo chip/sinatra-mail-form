@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sinatra-mail-form by chip</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Sinatra-mail-form</h1>
+        <p></p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/chip/sinatra-mail-form" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/chip/sinatra-mail-form/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/chip/sinatra-mail-form/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p>Sinatra MailForm</p>
+
+<p>This is a tiny project that uses <code>Sinatra</code> to accept 
+form data via an HTTP <code>POST</code> method and then email it
+via SMTP using the <code>pony</code> gem.</p>
+
+<p>An example Apache configuration has been provided and 
+assumes that the application is mounted under <code>/app</code>.</p>
+
+<p>To install:</p>
+
+<ol>
+<li> Clone the repo: <code>git clone https://github.com/chip/sinatra-mail-form.git</code>
+</li>
+<li> Change to the directory: <code>cd sinatra-mail-form</code>
+</li>
+<li> Run bundler with <code>bundle</code> or <code>bundle install</code>
+</li>
+<li> Copy the example configuration file: <code>cp mail_form.yml.example mail_form.yml</code>
+</li>
+<li> Edit mail_form.yml to suit your needs</li>
+<li> Copy apache-vhost.conf.example to an appropriate location on your server:
+<code>sudo cat apache-vhost.conf.example &gt;&gt; /etc/apache2/sites-enabled/000-default</code>
+</li>
+<li> Edit the apache configuration to suit your needs</li>
+<li> Restart apache: <code>sudo /etc/init.d/apache2 restart</code>
+</li>
+<li> Make the public directory: <code>mkdir public</code>
+</li>
+<li>See if it's wired up: <a href="http://example.com/test">http://example.com/test</a>
+</li>
+</ol><p>Enjoy!</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/chip">chip</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
