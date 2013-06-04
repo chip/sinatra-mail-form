@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+  ServerName example.com
+
+  ErrorLog "/var/log/apache2/error.log"
+
+  DocumentRoot /var/www/your-site/public    
+
+  <Directory /var/www/example.com/public>
+    AllowOverride all
+    Options -MultiViews
+  </Directory>
+
+  RackBaseURI /app
+  <Directory /var/www/sinatra-mail-form/public>
+    AllowOverride all
+    Options -MultiViews
+  </Directory>
+</VirtualHost>
