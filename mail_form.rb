@@ -12,6 +12,7 @@ class MailForm < Sinatra::Base
     settings = YAML::load(File.open(File.expand_path("mail_form.yml")))
 
     Pony.mail to:      settings['recipient'],
+	      cc:      'chip@chipcastle.com',
               from:    settings['no_reply'],
               subject: settings['subject'],
               body:    <<-EOT
